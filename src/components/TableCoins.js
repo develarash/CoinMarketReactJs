@@ -1,6 +1,6 @@
 import React from "react";
 import CoinRow from "./CoinRow";
-const titles=['#',"coin" ,"price","price Chane" ,"24 Valume"]
+const titles=['#',"coin" ,"price","price Chane" ,"24 Valume","market cap","high 24"]
 const TableCoins = ({ coins,search }) => {
   const filteredCoins=coins.filter((coin)=>coin.name.toLowerCase().includes(search.toLowerCase()) ||
   coin.symbol.toLowerCase().includes(search.toLowerCase()) 

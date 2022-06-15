@@ -21,6 +21,8 @@ const CoinRow = ({ coin, index }) => {
       className={coin.price_change_percentage_24h>0 ?"text-success":"text-danger"}
       >{coin.price_change_percentage_24h}</td>
       <td>{coin.total_volume}</td>
+      <td>{coin.market_cap}</td>
+      <td>{coin.high_24h}</td>
     </tr>
   );
 };
